@@ -1,0 +1,1 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"><application><activity android:name=".LossProbeActivity" android:exported="true" android:launchMode="singleTop" android:theme="@style/Theme.QinglingWriting" /><activity android:name=".ExtremeProbeActivity" android:exported="true" android:theme="@style/Theme.QinglingWriting" /></application></manifest>

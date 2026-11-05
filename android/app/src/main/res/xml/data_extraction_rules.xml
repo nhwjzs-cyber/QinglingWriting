@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    云备份与设备迁移规则(API 31+;docs/03 §6)。
+    M1:默认全部包含;账号数据库、凭据与设备绑定密钥的排除项在 M5 引入账号前补充,
+    并复核账号数据是否参与系统备份(docs/03 §6)。
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="file" path="datastore/auto_backup.preferences_pb" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="datastore/auto_backup.preferences_pb" />
+    </device-transfer>
+</data-extraction-rules>

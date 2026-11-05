@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 浅色基础主题:窗口底色取 design/tokens.json 的 light.background(见 colors.xml);
+     Compose 内部主题由 core/design/Theme.kt 的 Material3 ColorScheme 承担。 -->
+<resources>
+    <style name="Theme.QinglingWriting" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/qingling_window_background</item>
+    </style>
+</resources>

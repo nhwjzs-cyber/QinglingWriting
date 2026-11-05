@@ -1,0 +1,29 @@
+# ---- 本机文件,不得入库(ask 要求:local.properties 必须忽略;docs/03 §5、docs/05 §7)----
+local.properties
+**/local.properties
+
+# ---- 本机构建入口脚本(含本机绝对路径:JAVA_HOME=C:\JAVA、workspace 专属 .tools 回退路径;
+# 2026-10-31 复核检查点确定排除;约定见 docs/toolchain.md §2)----
+local-build.bat
+**/local-build.bat
+
+# ---- Gradle 构建产物 ----
+.gradle/
+build/
+**/build/
+.kotlin/
+
+# ---- IDE / 工具 ----
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- 服务端本地环境(只提交 .env.example)----
+.env
+**/.env
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db

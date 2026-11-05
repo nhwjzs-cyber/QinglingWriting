@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    系统 Auto Backup 规则(API < 31;docs/03 §6)。
+    M1:默认全部包含(本地数据库 writing.db 及其 WAL/SHM 是唯一用户数据);
+    登录凭据与设备绑定密钥的排除清单在 M5 引入账号前必须补充(docs/03 §6 红线)。
+-->
+<full-backup-content>
+    <exclude domain="file" path="datastore/auto_backup.preferences_pb" />
+</full-backup-content>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/widget_background" android:orientation="vertical"
+    android:gravity="center_vertical" android:padding="16dp" android:contentDescription="@string/widget_description">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/app_name" android:textColor="#B0B7B3" android:textSize="12sp" />
+    <TextView android:id="@+id/widget_count" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="@string/widget_loading" android:textColor="#F1F3F1"
+        android:textSize="18sp" android:textStyle="bold" />
+    <TextView android:id="@+id/widget_quick_note" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="44dp" android:gravity="center_vertical"
+        android:layout_marginTop="6dp" android:text="继续写作  ·  ＋ 灵感速记" android:textColor="#AAD9BD" android:textSize="13sp" />
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全部用户文案集中于此(docs/05 §2:代码只引用资源)。
+     红线(GLM-START.md 第 4 条 / ask):不得出现"已保存/已同步"装饰文字;
+     未接入的功能一律明示"尚未接入";演示数据必须明确标注且仅限 debug。 -->
+<resources>
+
+    <string name="app_name">轻灵写作</string>
+    <string name="widget_description">今日净增字数，点击继续写作</string>
+    <string name="widget_loading">正在读取今日字数…</string>
+    <string name="widget_today_value">今日净增 %1$d 字</string>
+    <string name="widget_continue">继续写作 ›</string>
+
+    <!-- ===== 通用 ===== -->
+    <string name="action_back">返回</string>
+    <string name="action_outline">目录</string>
+    <string name="action_tools">工具</string>
+    <string name="action_settings">设置</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_rename">重命名</string>
+    <string name="action_move_up">上移</string>
+    <string name="action_move_down">下移</string>
+    <string name="action_move_to_volume">移至其他卷</string>
+    <string name="action_move_to_recycle_bin">移入回收站</string>
+    <string name="action_restore">恢复</string>
+    <string name="action_more">更多操作</string>
+    <string name="action_close">关闭</string>
+    <string name="action_new_volume">新建卷</string>
+    <string name="action_new_chapter">新建章</string>
+    <string name="action_recycle_bin">回收站</string>
+    <string name="action_continue_writing">继续写作</string>
+    <string name="action_undo">撤销</string>
+    <string name="action_redo">重做</string>
+
+    <!-- 标题校验错误(与 TitleValidator 一致:书名 80 码点,卷/章 120 码点) -->
+    <string name="title_error_empty">标题不能为空(去两端空白后)。</string>
+    <string name="title_error_line_break">标题不能包含换行或回车。</string>
+    <string name="title_error_too_long_format">标题最多 %1$d 个字(按 Unicode 码点计)。</string>
+
+    <!-- ===== 书架(起始页)===== -->
+    <string name="bookshelf_title">书架</string>
+    <string name="bookshelf_empty_title">书架还是空的</string>
+    <string name="bookshelf_empty_body">创建一本书,从第一行开始写。</string>
+    <string name="bookshelf_create_book">创建一本书</string>
+    <string name="bookshelf_meta_format">%1$d 字 · %2$s</string>
+    <string name="bookshelf_demo_badge">演示数据</string>
+    <string name="bookshelf_demo_notice">带「演示·」前缀的书是演示数据,内容保存在本机数据库,仅用于界面验证,不会出现在正式版本。</string>
+    <string name="create_book_title">创建一本书</string>
+    <string name="field_book_title">书名</string>
+    <string name="field_book_author">作者(可选)</string>
+    <string name="field_book_description">简介(可选)</string>
+    <string name="rename_book_title">重命名书</string>
+    <string name="delete_book_title">移入回收站</string>
+    <string name="delete_book_body_format">将《%1$s》连同所有卷与 %2$d 个章一起移入回收站？不会自动永久删除，可在回收站恢复。</string>
+
+    <!-- ===== 回收站 ===== -->
+    <string name="recycle_title">回收站</string>
+    <string name="recycle_empty">回收站是空的。删除的书、卷、章会出现在这里,可随时恢复。</string>
+    <string name="recycle_hint">删除项不会自动永久删除，可在这里恢复。独立备份也会保留回收站内容。</string>
+    <string name="recycle_kind_book">整书</string>
+    <string name="recycle_kind_volume">卷</string>
+    <string name="recycle_kind_chapter">章</string>
+    <string name="recycle_entry_context_format">《%1$s》</string>
+    <string name="recycle_entry_book_detail_format">%1$d 卷 · %2$d 章</string>
+    <string name="recycle_deleted_at_format">删除于 %1$s</string>
+
+    <!-- ===== 编辑器 ===== -->
+    <string name="editor_loading">正在打开……</string>
+    <string name="editor_hint">在这里写下第一行……\n内容会自动保存到本机。</string>
+    <string name="editor_save_idle">更改会自动保存到本机</string>
+    <string name="editor_save_saving">保存中……</string>
+    <string name="editor_save_saved_format">已保存到本机 · %1$s</string>
+    <string name="editor_save_failed_format">保存失败:%1$s</string>
+    <string name="editor_save_retry">重试</string>
+    <string name="editor_save_reload_latest">载入最新内容</string>
+    <string name="save_failure_disk_full">磁盘空间不足</string>
+    <string name="save_failure_storage_unavailable">本机存储暂不可用</string>
+    <string name="save_failure_deleted">本章已被删除</string>
+    <string name="save_failure_stale">内容已在本机被更新</string>
+    <string name="save_failure_unknown">未知错误</string>
+    <string name="editor_word_count_format">字数:%1$d</string>
+    <string name="editor_missing">没有找到可编辑的内容。它可能已被删除,请回到书架重新打开。</string>
+
+    <!-- ===== 目录面板(左面板 · 卷章目录)===== -->
+    <string name="outline_title">目录</string>
+    <string name="outline_empty">这本书还没有卷章。</string>
+    <string name="outline_chapter_count_format">%1$d 章</string>
+    <string name="outline_current_chapter">当前章</string>
+    <string name="field_volume_title">卷名</string>
+    <string name="field_chapter_title">章节标题</string>
+    <string name="default_new_volume_title">未命名卷</string>
+    <string name="default_new_chapter_title">未命名章节</string>
+    <string name="move_to_volume_title">移至其他卷</string>
+    <string name="move_to_volume_no_target">这本书没有其他卷。先新建一个卷。</string>
+    <string name="delete_volume_body_format">将卷「%1$s」连同其中 %2$d 章移入回收站?可随时恢复。</string>
+    <string name="delete_chapter_body_format">将章「%1$s」移入回收站?可随时恢复。</string>
+
+    <!-- ===== 工具面板(右面板 · 工具)===== -->
+    <string name="tools_title">工具</string>
+    <string name="tools_find">查找与替换</string>
+    <string name="tools_history">历史版本</string>
+    <string name="tools_appearance">字号与背景</string>
+    <string name="tools_export">合并导出</string>
+    <string name="tools_backup">备份与恢复</string>
+
+    <!-- ===== 导出 ===== -->
+    <string name="export_title">导出</string>
+    <string name="export_no_book">没有找到这本书,无法导出。请回到书架重新打开。</string>
+
+    <!-- ===== 备份与同步 ===== -->
+    <string name="backup_title">备份与恢复</string>
+
+    <!-- ===== 设置 ===== -->
+    <string name="settings_title">设置</string>
+    <string name="settings_theme">主题</string>
+    <string name="settings_theme_value_dark">深色</string>
+    <string name="settings_theme_value_light">浅色</string>
+    <string name="settings_theme_value_system">跟随系统</string>
+    <string name="settings_theme_dialog_title">选择主题</string>
+    <string name="settings_theme_behavior">首次启动默认深色。选择会立即保存到本机,重启后保持;「跟随系统」才响应系统明暗切换。</string>
+    <string name="settings_body_layout">字号、排版显示与背景</string>
+    <string name="settings_about">关于轻灵写作</string>
+    <string name="settings_privacy">本机数据说明</string>
+
+    <!-- ===== 演示数据种子(仅 debug 由 DemoSeeder 读取,release 不引用)===== -->
+    <string name="demo_book_title_1">演示·山间来信</string>
+    <string name="demo_book_title_2">演示·夜航笔记</string>
+    <string name="demo_book_title_3">演示·四季短章</string>
+
+    <string name="demo_chapter_title_1_1">第一章 山雾</string>
+    <string name="demo_chapter_body_1_1">清晨的雾从谷底漫上来,像一封没有署名的信,轻轻落在每一扇窗台上。山里的时间走得慢,足够把一句话想清楚,再慢慢写下来。</string>
+    <string name="demo_chapter_title_1_2">第二章 溪声</string>
+    <string name="demo_chapter_body_1_2">溪水声比人先醒。我沿着石阶往下走,把昨夜没写完的那一段,一句一句说给水听。</string>
+
+    <string name="demo_chapter_title_2_1">第一章 灯塔</string>
+    <string name="demo_chapter_body_2_1">航灯亮起的时候,海面像被翻开的稿纸。我们把坐标写进日志,也把没说出口的话,留在这一页的空白处。</string>
+
+    <string name="demo_chapter_title_3_1">第一章 立春</string>
+    <string name="demo_chapter_body_3_1">立春这天,风换了方向。案头的稿纸被吹起一角,像是谁提前来催稿了。</string>
+
+    <!-- ===== 历史版本(M2)===== -->
+    <string name="history_title">历史版本</string>
+    <string name="history_empty">还没有历史版本。输入内容会按间隔自动保存快照,也可以随时手动创建。</string>
+    <string name="history_manual">创建快照</string>
+    <string name="history_restore">恢复此版本</string>
+    <string name="history_restored_hint">已恢复。当前内容已保存为「恢复前」版本,可在下方找到。</string>
+    <string name="history_restore_confirm_title">恢复此版本?</string>
+    <string name="history_restore_confirm_body">正文与标题将替换为所选版本;恢复前会先把当前内容保存为「恢复前」历史,不会丢失。</string>
+    <string name="history_preview_title_format">快照预览 · %1$s</string>
+    <string name="history_preview_empty">(空)</string>
+    <string name="history_entry_time_format">%1$s</string>
+    <string name="history_source_auto">自动</string>
+    <string name="history_source_manual">手动</string>
+    <string name="history_source_before_restore">恢复前</string>
+    <string name="history_source_before_change">变更前</string>
+    <string name="history_source_imported">导入</string>
+
+    <string name="export_description">按目录顺序导出 TXT 或 DOCX，保留原章节；可选是否包含书名、卷名和章节标题。</string>
+    <string name="export_selected_count">已选 %1$d 章</string>
+    <string name="export_select_all">全选</string>
+    <string name="export_select_none">清空选择</string>
+    <string name="export_preview">顺序与正文预览</string>
+    <string name="export_include_book">包含书名</string>
+    <string name="export_include_volume">包含卷名</string>
+    <string name="export_include_chapter">包含章节标题</string>
+    <string name="export_save">保存 TXT</string>
+    <string name="export_share">分享 TXT</string>
+    <string name="export_saved">导出文件已写入所选位置。</string>
+    <string name="export_cancelled">已取消，未导出文件。</string>
+    <string name="export_share_opened">已打开系统分享，请选择目标应用完成操作。</string>
+    <string name="export_empty_selection">请至少选择一章。</string>
+    <string name="export_changed">目录已变化，请重新确认所选章节后再导出。</string>
+    <string name="export_pending_missing">待导出的临时文件已失效，请重新导出。</string>
+    <string name="export_failed">导出失败，原章节未改变。目标文件可能不完整，请重试。</string>
+    <string name="export_empty_book">这本书还没有可导出的章节。</string>
+    <string name="export_order_note">导出顺序（与目录一致）</string>
+    <string name="export_blank_preview">（空正文）</string>
+    <string name="export_preview_truncated">此处仅预览前 8000 字符，导出文件包含完整内容。</string>
+    <string name="settings_appearance_group">纸色与外观</string>
+    <string name="settings_interaction_group">交互与动效</string>
+    <string name="settings_reduce_motion">减少动态效果</string>
+    <string name="settings_reduce_motion_hint">直接显示页面与面板，保留所有操作反馈。</string>
+    <string name="works_title">我的作品</string>
+    <string name="home_heading">让灵感落在纸上</string>
+    <string name="home_caption">继续写下去，或打开作品栏目整理你的故事。</string>
+    <string name="home_continue">继续最近编辑</string>
+    <string name="home_continue_hint">打开这本书最近编辑的章节</string>
+    <string name="home_collection_count">收纳 %1$d 部作品</string>
+    <string name="home_collection_hint">查看、新建和管理作品</string>
+    <string name="editor_title_tools">章节标题，点按打开写作工具</string>
+    <string name="editor_left_handle">右滑或轻点，打开章节目录</string>
+    <string name="editor_right_handle">左滑或轻点，打开写作工具</string>
+    <string name="editor_gesture_hint">右滑目录 · 左滑工具 · 点章节名打开工具</string>
+    <string name="outline_total_count">章节（%1$d）</string>
+    <string name="outline_collapse">收起本卷</string>
+    <string name="outline_expand">展开本卷</string>
+    <string name="tools_edit_group">写作工具</string>
+    <string name="tools_files_group">文件与数据</string>
+    <string name="action_save">保存</string>
+    <string name="appearance_title">写作外观</string>
+    <string name="appearance_scope">适用于所有章节，只改变屏幕显示。保存后生效，不影响正文或导出。</string>
+    <string name="appearance_sample">　　清晨的雾从谷底漫上来。\n　　让文字慢慢落在纸上，写下属于自己的故事。</string>
+    <string name="appearance_font_size">正文字号：%1$d</string>
+    <string name="appearance_line_height">行距：%1$d%%</string>
+    <string name="appearance_gutter">左右留白：%1$d</string>
+    <string name="appearance_font">字体</string>
+    <string name="appearance_font_system">系统默认</string>
+    <string name="appearance_font_serif">衬线字体（以设备支持为准）</string>
+    <string name="appearance_font_mono">等宽字体（以设备支持为准）</string>
+    <string name="appearance_background">背景配色</string>
+    <string name="appearance_theme">跟随应用主题</string>
+    <string name="appearance_ink">墨黑</string>
+    <string name="appearance_paper">暖纸</string>
+    <string name="appearance_forest">夜林</string>
+    <string name="appearance_custom">自定义颜色</string>
+    <string name="appearance_background_hex">背景颜色</string>
+    <string name="appearance_text_hex">文字颜色</string>
+    <string name="appearance_hex_hint">输入 6 位颜色值，例如 #121212。请通过上方预览确认文字清晰可读。</string>
+    <string name="appearance_choose_image">选择本地背景图片</string>
+    <string name="appearance_image_local">图片会缩小后保存在本机，原图片不会被修改。</string>
+    <string name="appearance_image_dim">底色遮罩：%1$d%%</string>
+    <string name="appearance_remove_image">移除背景图片</string>
+    <string name="appearance_error">未能读取图片或保存设置。图片请使用 12 MB 以内的普通图片，然后重试。</string>
+    <string name="appearance_reset">恢复默认外观</string>
+    <string name="format_title">一键排版</string>
+    <string name="format_scope">仅处理当前章，每个原有换行视为一个段落。预览确认后应用，可立即撤销；排版前会保存一份历史版本。</string>
+    <string name="format_indent">段首统一缩进两个全角空格</string>
+    <string name="format_trim">清理每行末尾的空格与制表符</string>
+    <string name="format_paragraphs">段间空行</string>
+    <string name="format_keep">保留原有空行</string>
+    <string name="format_compact">移除段间空行</string>
+    <string name="format_blank">段间统一空一行</string>
+    <string name="format_preview">排版后预览</string>
+    <string name="format_preview_limit">预览显示前 4000 个字符，应用时处理整个当前章节。</string>
+    <string name="format_unchanged">正文已符合所选规则，无需改动。</string>
+    <string name="format_apply">应用排版</string>
+    <string name="format_applied">排版已应用，可在工具栏撤销。保存状态见底栏。</string>
+    <string name="format_stale">正文已变化或输入尚未完成。请关闭预览、结束输入后重新打开。</string>
+    <string name="format_save_failed">未能保存原文、历史或排版规则，正文未改动。请检查保存状态后重试。</string>
+    <string name="backup_protect_title">给稿件留一份独立备份</string>
+    <string name="backup_scope">备份全部作品、卷章、正文、完成标记、细纲、概要、设定与便签、回收站、历史版本和光标位置。不包含账号、写作统计、外观设置及背景图片。</string>
+    <string name="backup_create">创建备份并选择保存位置</string>
+    <string name="backup_external_note">建议保存到你能找回的位置，或另存一份到网盘。普通备份包含未加密正文；加密备份的密码无法找回，请妥善保管。</string>
+    <string name="backup_select">选择备份文件，预览后恢复</string>
+    <string name="backup_saved">备份文件已写入所选位置。</string>
+    <string name="backup_cancelled">已取消保存，没有创建外部备份。</string>
+    <string name="backup_failed">操作未完成，请检查文件位置与存储空间后重试。现有作品不会被覆盖。</string>
+    <string name="backup_invalid">无法读取这个备份。文件可能损坏、格式不支持，或超过本版支持的大小。现有作品未改动。</string>
+    <string name="backup_empty">还没有作品可备份。</string>
+    <string name="backup_missing">备份准备已失效，请重新创建后保存。</string>
+    <string name="backup_restored">已恢复 %1$d 部作品、%2$d 章（含回收站内容）。可返回作品栏目查看新副本。</string>
+    <string name="backup_preview">备份内容预览</string>
+    <string name="backup_created_at">创建时间：%1$s</string>
+    <string name="backup_counts">%1$d 部作品 · %2$d 章 · %3$d 个历史版本</string>
+    <string name="backup_deleted_count">其中回收站章节：%1$d</string>
+    <string name="backup_deleted_book">%1$s（回收站）</string>
+    <string name="backup_more_books">其余作品也会一并恢复。</string>
+    <string name="backup_restore_copies">恢复为新副本</string>
+    <string name="backup_not_cloud">自动保存、章节历史和独立备份各有用途。自动备份需选择文件夹并启用。本版单个备份支持展开后 32 MB 以内的数据。新功能即将上线……</string>
+    <string name="backup_confirm_title">恢复这份备份？</string>
+    <string name="backup_confirm_body">作品将添加为名称带“恢复副本”的新书，已有作品保持原样。原来在回收站中的内容仍放在回收站中。重复恢复会再创建一套副本。</string>
+    <string name="search_in_chapter">查找本章</string>
+    <string name="search_working">正在查找…</string>
+    <string name="search_count">%1$d / %2$d 处</string>
+    <string name="search_previous">上一处</string>
+    <string name="search_next">下一处</string>
+    <string name="search_replace">替换</string>
+    <string name="search_replace_confirm">确认替换</string>
+    <string name="search_replace_failed">未能完成替换，请检查底部保存状态后重试。原文保存或历史建立失败时不会应用替换。</string>
+    <string name="search_replacement">替换为（留空即删除）</string>
+    <string name="search_replace_current">替换这一处</string>
+    <string name="search_replace_all">替换本章全部</string>
+    <string name="search_replace_preview">将替换 %1$d 处</string>
+    <string name="search_replace_protection">仅修改当前章正文。应用前会先保存原文并建立历史版本；应用后也可撤销。下面为第一处变更附近的片段。</string>
+    <string name="search_before">替换前：%1$s</string>
+    <string name="search_after">替换后：%1$s</string>
+    <string name="search_replace_too_large">替换后正文过大（上限 800 万字符），请分批处理。</string>
+    <string name="search_navigation_limit">命中过多，仅在前 5000 处之间跳转；本章全部替换仍处理所有命中。</string>
+    <string name="search_book">全书搜索</string>
+    <string name="search_book_hint">搜索章名或正文</string>
+    <string name="search_literal_hint">按原文匹配，区分英文大小写；每章显示一条结果。点开后可在本章继续定位。标题命中时，正文可能为 0 处。</string>
+    <string name="search_book_count">找到 %1$d 个章节</string>
+    <string name="search_book_limit">结果超过 200 个章节，先显示目录顺序前 200 章，请缩小关键词范围。</string>
+    <string name="search_failed">暂时无法打开或搜索，请检查保存状态后重试。</string>
+    <string name="search_no_results">没有匹配的章节</string>
+    <string name="outline_filter">按章名筛选</string>
+    <string name="appearance_low_contrast">文字与底色的对比度偏低，可能难以阅读。建议调整颜色；有背景图片时也请检查实际预览。</string>
+    <string name="about_body">轻灵写作 %1$s（%2$d）\n\n供测试的本地写作版本。支持卷章管理、自动保存、章节历史、查找替换、全书搜索、排版、TXT 导出及独立备份。\n\n新功能即将上线……本版本沿用测试签名，便于覆盖升级。</string>
+    <string name="privacy_body">稿件、历史版本、回收站和最近搜索词保存在本机。本版没有联网权限，不会由应用上传稿件。\n\n备份与导出会写入你选择的位置；手动备份可选择密码加密，普通备份与自动备份未加密。密码无法找回，请妥善保管。系统备份与设备迁移是否可用取决于设备设置，不能代替独立备份。\n\n卸载或清除应用数据会失去本机稿件。升级请覆盖安装，并定期手动备份。</string>
+</resources>

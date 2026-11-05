@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色窗口底色 = design/tokens.json dark.background(#191D1C) -->
+    <color name="qingling_window_background">#191D1C</color>
+</resources>

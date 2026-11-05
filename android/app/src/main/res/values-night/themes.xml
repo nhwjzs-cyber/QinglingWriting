@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 深色主题:深浅色跟随系统(docs/02 §1),窗口底色取 tokens.json 的 dark.background。 -->
+<resources>
+    <style name="Theme.QinglingWriting" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/qingling_window_background</item>
+    </style>
+</resources>

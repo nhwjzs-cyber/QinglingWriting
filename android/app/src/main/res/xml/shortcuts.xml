@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="quick-note" android:enabled="true" android:icon="@drawable/ic_quick_note" android:shortcutShortLabel="@string/quick_note_label" android:shortcutLongLabel="@string/quick_note_label">
+        <intent android:action="com.qingling.writing.QUICK_NOTE" android:targetPackage="com.qingling.writing" android:targetClass="com.qingling.writing.feature.planning.QuickNoteActivity" />
+    </shortcut>
+</shortcuts>
